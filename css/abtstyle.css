@@ -1,0 +1,112 @@
+*{
+    font-family: 'Philosopher', sans-serif;
+   }
+   .navbar, .container-fluid, .navbar-brand{
+       background-color: #8DC6FF !important;
+   }
+   .navbar-brand{
+       font-family: 'Roboto', sans-serif !important;
+       font-size: 30px !important;
+       font-weight: bold;
+       font-style: italic;
+       color: white !important;
+   }
+   .nav-btn{
+       background-color: #8DC6FF;
+       color: #144A01;
+       font-family: 'Roboto', sans-serif !important;
+       padding: 5px 10px;
+       margin-right: 40px;
+       box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
+       border: none;
+       border-radius: 10px;
+       font-size: 20px;
+       text-decoration: none;
+   }
+   .nav-btn:hover{
+       background-color: #22313F;
+       color: white;
+       transition: 0.5s;
+   }
+   .about{
+    background-color: #22313F;
+   }
+   .start{
+     font-style: oblique;
+     justify-content: center;
+     color: #8DC6FF;
+     align-content: center;
+     font-size: 20px;
+     max-height: fit-content;
+     padding-left: 60px;
+     padding-right: 50px;
+     margin-right: 7%;
+     margin-left: 7%;
+     height: 87vh;
+   }
+   .start p{
+    padding-left: 20px;
+    padding-right: 5px;
+   }
+   .start h1{
+    padding-top: 120px;
+    padding-bottom: 30px;
+    padding-left: 25%;
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+   }
+   .start .quote{
+    padding-left: 4%;
+    font-size: 30px;
+    font-style: italic;
+   }
+   .end{
+    background-color: white;
+    height: 0.5vh;
+   }
+main{
+  padding-top: 6%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ }
+ main h1{
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+    padding-left: 25%;
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+   }
+ .box .floating-image
+{
+ max-width: 400px;
+justify-content: center;
+}
+
+.box{
+ font-style: oblique;
+ justify-content: center;
+ color: white;
+ align-content: center;
+ max-height: fit-content;
+ padding-left: 50px;
+ padding-right: 50px;
+ margin-right: 0%;
+}
+footer{
+    text-align: center;
+    /* background-color: #8DC6FF; */
+    color: #031e36;
+    padding: 40px;
+    background-image: linear-gradient(to right, #8dc6ff4f,#8dc6ff,#8dc6ff4f);
+}
+footer > p >a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #031e36;
+}
