@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web API Tutorial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>ChillZone</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="images/logo.png" >
+            ChillZone
+          </a>
+          <ul>
+          <a class="nav-btn" href="#">Home</a>
+          <a class="nav-btn" href="#">About</a>
+          <a class="nav-btn" href="#">Contact Us</a>
+        </ul>
+        </div>
+    </nav>
+    
+    <div class="container">        
+        <form action="">
+            <input type="hidden" id='hidden_token'>
+            
+            <div class="col-sm-6 form-group row mt-4 px-0">
+                <label for="Genre" class="form-label col-sm-2 txt">Genre:</label>
+                <select name="" id="select_genre" class="form-control form-control-sm col-sm-10">
+                    <option>Select...</option>                    
+                </select>
+            </div>
+            <div class="col-sm-6 form-group row px-0 ">
+                <label for="Genre" class="form-label col-sm-2 txt">Playlists:</label>
+                <select name="" id="select_playlist" class="form-control form-control-sm col-sm-10">
+                    <option>Select...</option>                    
+                </select>
+            </div>                  
+            <div class="col-sm-6 row form-group px-0">
+                <button type="submit" id="btn_submit" class="btn btn-success col-sm-12">Search</button>
+            </div>          
+        </form>        
+        <div class="row">
+            <div class="col-sm-6 px-0">
+                <div class="list-group song-list">
+                    <a href="#" class=""></a>
+                </div>    
+                <div class="list-group song-list">
+                    <a href="#" class=""></a>
+                </div>                                             
+            </div>
+            <div class="offset-md-1 col-sm-4" id="song-detail">  
+                <div class="row col-sm-12 px-0">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </div>      
+                <div class="row col-sm-12 px-0">
+                    <label for="Genre" class="form-label col-sm-12 txt">Song Title:</label>
+                </div>      
+                <div class="row col-sm-12 px-0">
+                    <label for="artist" class="form-label col-sm-12 txt">By :</label>
+                </div>                   
+            </div>
+        </div>  
+        
+    </div>
+
+
+    <br>
+    <div class="english-songs topic">
+        <h3 class="txt">International Top Hits</h3>
+    <div class="fake_list ">
+        <div class="fake_music">
+            <img src="images/peaches.jpg" alt="">
+            <label for="song name:" class="txt">Peaches</label>
+            <button class="play_btn Peaches">Play</button>
+        </div>
+     
+
+
+        <div class="fake_music">
+            <img src="images/willow.jpg " alt="">
+            <label for="song name:" class="txt">Willow</label>   
+            <button class="play_btn Willow">Play</button>  
+           </div>
+        <div class="fake_music">
+            <img src="images/Who says.jpg" alt="">
+            <label for="song name" class="txt">Who Says</label>
+            <button class="play_btn Who">Play</button>
+        </div>
+        <div class="fake_music">
+            <img src="images/love story.jpg" alt="">
+            <label for="song name:" class="txt">Love Story</label>
+            <button class="play_btn Love">Play</button>
+        </div>
+        <div class="fake_music">
+            <img src="images/bad blood.jpg" alt="">
+            <label for="song name:" class="txt">Bad Blood</label>
+            <button class="play_btn Bad">Play</button>
+        </div>
+    </div>
+</div>
+
+<br>
+    <div class="hindi-songs topic">
+        <h3 class="txt">Bollywood Top Hits</h3>
+    <div class="fake_list ">
+        <div class="fake_music">
+            <img src="images/channa mereya.jpg" alt="">
+            <label for="song name:" class="txt">Channa Mereya</label>
+            <button class="play_btn Channa">Play</button>
+        </div>
+        <div class="fake_music">
+            <img src="images/tere sang yaara.jpg">
+            <label for="song name:" class="txt">Tere Sang Yaara</label>   
+            <button class="play_btn Tere">Play</button>  
+           </div>
+        <div class="fake_music">
+            <img src="images/kho gaye hum kahan.jpg" alt="">
+            <label for="song name" class="txt">Kho Gaye Hum Kahan</label>
+            <button class="play_btn Kho">Play</button>
+        </div>
+        <div class="fake_music">
+            <img src="images/tera yaar hu main.jpg" alt="">
+            <label for="song name:" class="txt">Tera Yaar Hoon Main</label>
+            <button class="play_btn Tera">Play</button>
+        </div>
+        <div class="fake_music">
+            <img src="images/raabta.jpg" alt="">
+            <label for="song name:" class="txt">Raabta</label>
+            <button class="play_btn Raabta">Play</button>
+        </div>
+    </div>
+</div>
+
+
+<br>
+    <div class="punjabi-songs topic">
+        <h3 class="txt">Punjabi Top Hits</h3>
+    <div class="fake_list ">
+        <div class="fake_music">
+            <img src="images/brown rang.jpg" alt="">
+            <label class="txt" for="song name:">Brown Rang</label>
+            <button class="play_btn Brown">Play</button>
+        </div>
+        <div class="fake_music">
+            <img src="images/gabru.jpg">
+            <label class="txt" for="song name:">Gabru</label>   
+            <button class="play_btn Gabru">Play</button>  
+           </div>
+        <div class="fake_music">
+            <img src="images/high heels.jpg" alt="">
+            <label class="txt" for="song name">High Heels</label>
+            <button class="play_btn High">Play</button>
+        </div>
+        <div class="fake_music">
+            <img src="images/daaru badnaam.jpg" alt="">
+            <label class="txt" for="song name:">Daaru Badnaam</label>
+            <button class="play_btn Daaru">Play</button>
+        </div>
+        <div class="fake_music">
+            <img src="images/dope shope.jpg"  alt="">
+            <label class="txt" for="song name:">Dope shope</label>
+            <button class="play_btn Dope">Play</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <h2><strong>ChillZone</strong></h2>
+    <p><em>Your relaxation hub</em></p>
+    <p>Made by <a href="https://github.com/nikhita28">Nikhita</a>, <a href="https://github.com/apoorvakaushal09">Apoorva</a>, <a href="https://github.com/manas0916">Manas</a> and <a href="https://github.com/Nisha331">Nisha</a>
+    </p>
+    <h5>© 2021 | Team Error404 | All rights reserved.</h5>
+</footer>
+    
+    <script src="music.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
