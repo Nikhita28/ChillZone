@@ -1,36 +1,35 @@
 *{
     font-family: 'Philosopher', sans-serif;
    }
-   .navbar, .container-fluid, .navbar-brand{
-       background-color: #8DC6FF !important;
-   }
-   .navbar-brand{
-       font-family: 'Roboto', sans-serif !important;
-       font-size: 30px !important;
-       font-weight: bold;
-       font-style: italic;
-       color: white !important;
-   }
-   .nav-btn{
-       background-color: #8DC6FF;
-       color: #144A01;
-       font-family: 'Roboto', sans-serif !important;
-       padding: 5px 10px;
-       margin-right: 40px;
-       box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
-       border: none;
-       border-radius: 10px;
-       font-size: 20px;
-       text-decoration: none;
-   }
-   .nav-btn:hover{
-       background-color: #22313F;
-       color: white;
-       transition: 0.5s;
-   }
-   .about{
-    background-color: #22313F;
-   }
+   body{
+    background-image: radial-gradient(#104069,#000000);
+}
+.navbar-light{
+    background-color: hsl(210, 100%, 78%) !important;
+}
+.navbar-brand{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: bold;
+    font-style: italic;
+    color: #031e36;
+    background-color: #8DC6FF !important;
+}
+.nav-btn{
+    color: #031e36;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-btn:hover{
+    font-size: 22px;
+    transition: 0.5s;
+    border-bottom: 2px solid #031e36;
+    color: #031e36;
+}
    .start{
      font-style: oblique;
      justify-content: center;
