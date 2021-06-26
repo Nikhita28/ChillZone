@@ -30,6 +30,23 @@ body{
     border-bottom: 2px solid #031e36;
     color: #031e36;
 }
+.header{
+    height: 650px;
+    background-image: url('../images/back.png');
+    background-position-x: 60px;
+}
+.header-text{
+    padding-top: 200px;
+    margin-left: 40px;
+    color: white;
+}
+.header-text>h2{
+    padding-top: 10px;
+}
+.header-text > h2 > span{
+    font-style: italic;
+    color: #8DC6FF;
+}
 .main{
     padding:24px;
     margin-top: 40px;
@@ -76,25 +93,27 @@ body{
 }
 .content:hover{
   box-shadow: 3px 3px 10px 0 rgba(119, 216, 243, 0.603);
-  transform: scale(1.03);
+  transition: 0.5s;
 }
 .btn{
  font-weight: bold;
  border: 2px solid#031e36;
  color: white;
- padding: 16px 32px;
+ padding: 10px 20px;
  text-align: center;
  text-decoration: none;
  display: inline-block;
  font-size: 20px;
  margin: 4px 2px;
- transition-duration: 0.4s;
+ transition-duration: 0.5s;
  cursor: pointer;
- border-radius:23px;
+ border-radius:15px;
 }
 .btn:hover{
     background-color: white;
     color: #031e36;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 hr{
     border-width: 0px 0px 0px 0px;
