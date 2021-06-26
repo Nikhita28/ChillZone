@@ -1,0 +1,40 @@
+*{
+    font-family: 'Philosopher', sans-serif;
+   }
+   .navbar, .container-fluid, .navbar-brand{
+       background-color: #8DC6FF !important;
+   }
+   .navbar-brand{
+       font-family: 'Roboto', sans-serif !important;
+       font-size: 30px !important;
+       font-weight: bold;
+       font-style: italic;
+       color: white !important;
+   }
+   .nav-btn{
+       background-color: #8DC6FF;
+       color: #144A01;
+       font-family: 'Roboto', sans-serif !important;
+       padding: 5px 10px;
+       margin-right: 40px;
+       box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
+       border: none;
+       border-radius: 10px;
+       font-size: 20px;
+       text-decoration: none;
+   }
+   .nav-btn:hover{
+       background-color: #22313F;
+       color: white;
+       transition: 0.5s;
+   }
+   .zone{
+    background-color: #2D3033;
+   }
+   .main {
+  padding: 24px;
+  background-color: #2D3033;
+  padding: 24px;
+  height: auto;
+  text-align: center;
+ }
