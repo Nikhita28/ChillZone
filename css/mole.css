@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #22313f;
+    background: #8dc6ff;
+    font-family: 'Philosopher', sans-serif;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .text-top{
+    margin-top: 60px;
+    text-align: center;
+  }
+  .text-top > h1{
+      font-size: 6rem;
+      margin-bottom: 20px;
+  }
+  .text-top > h2{
+      font-size: 2rem;
+      margin-bottom: 30px;
+  }
+  .score {
+    background: rgba(255, 255, 255, 0.322);
+    padding: 0 3rem;
+    line-height: 1;
+    border-radius: 1rem;
+    font-size: 3rem;
+    margin-right: 10px;
+  }
+  .play{
+    font-size: 2rem;
+    background-color: #22313f;
+    color: #adcdee;
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+  .play:hover{
+      font-size: 2.5rem;
+      transition: 0.5s;
+  }
+  .game {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hole:after {
+    display: block;
+    background: url('../images/dirt.png') bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height:70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+  }
+  
+  .mole {
+    background: url('../images/mole.png') bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.4s;
+  }
+  
+  .hole.up .mole {
+    top: 0;
+  }
