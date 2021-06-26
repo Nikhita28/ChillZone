@@ -1,0 +1,117 @@
+*{
+    font-family: 'Philosopher', sans-serif;
+}
+body{
+    background-image: radial-gradient(#104069,#000000);
+}
+.navbar-light{
+    background-color: hsl(210, 100%, 78%) !important;
+}
+.navbar-brand{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: bold;
+    font-style: italic;
+    color: #031e36;
+    background-color: #8DC6FF !important;
+}
+.nav-btn{
+    background-color: #8DC6FF;
+    color: #031e36;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 5px 10px;
+    margin-right: 40px;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-btn:hover{
+    background-color: #031e36;
+    color: white;
+    transition: 0.5s;
+}
+.main{
+    padding:24px;
+    margin-top: 40px;
+    border-radius: 17px;
+    padding:24px;
+    height: auto;
+    text-align: center;
+}
+.container{
+  display:flex;
+  padding:24px;
+  justify-content:space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.content{
+  height:auto;
+  width:25vw;
+  transition: 0.3s;
+  border-radius: 17px;
+  background: rgba( 141, 198, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.0px );
+  -webkit-backdrop-filter: blur( 6.0px );
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+  padding: 20px;
+}
+.content>h1{
+    margin-top: 20px;
+}
+.content >h3{
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 10px;
+}
+.heading{
+  margin:auto;
+  font-size: 4rem;
+  color: #8DC6FF;
+}
+.content:hover{
+  box-shadow: 3px 3px 10px 0 rgba(119, 216, 243, 0.603);
+  transform: scale(1.03);
+}
+.btn{
+ font-weight: bold;
+ border: 2px solid#031e36;
+ color: white;
+ padding: 16px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 20px;
+ margin: 4px 2px;
+ transition-duration: 0.4s;
+ cursor: pointer;
+ border-radius:23px;
+}
+.btn:hover{
+    background-color: white;
+    color: #031e36;
+}
+hr{
+    border-width: 0px 0px 0px 0px;
+    height: 6px !important;
+    background-image: linear-gradient(to right, rgba(21, 147, 231, 0.466),rgb(21, 147, 231),rgba(21, 147, 231, 0.466));
+}
+footer{
+    text-align: center;
+    /* background-color: #8DC6FF; */
+    color: #031e36;
+    padding: 40px;
+    background-image: linear-gradient(to right, #8dc6ff4f,#8dc6ff,#8dc6ff4f);
+}
+footer > p >a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #031e36;
+}
