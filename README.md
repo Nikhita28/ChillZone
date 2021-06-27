@@ -1,4 +1,4 @@
-
+![GitHub](https://img.shields.io/github/license/nikhita28/ChillZone)
 <p align="center">
   <img src="images/white.png" width= 150px height= 150px>
 </p>
