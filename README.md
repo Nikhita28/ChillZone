@@ -57,7 +57,7 @@ To get a local copy up and running follow the simple steps.
    ```
  ## look
  
- ![Screenshot (1)](https://user-images.githubusercontent.com/73363765/123540255-b5619880-d75b-11eb-8f4b-ab9b41ecae61.png)
+<!--  ![Screenshot (1)](https://user-images.githubusercontent.com/73363765/123540255-b5619880-d75b-11eb-8f4b-ab9b41ecae61.png) -->
 ![Screenshot (2)](https://user-images.githubusercontent.com/73363765/123540256-b5619880-d75b-11eb-9aab-f91da1dc5093.png)
 ![Screenshot (3)](https://user-images.githubusercontent.com/73363765/123540257-b5fa2f00-d75b-11eb-8ef5-d73340e009e1.png)
 ![Screenshot (14)](https://user-images.githubusercontent.com/73363765/123540429-91528700-d75c-11eb-9332-836163823a7b.png)
