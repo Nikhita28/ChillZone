@@ -116,6 +116,22 @@ body{
 .d-inline-block {
     display: inline-block!important;
 }
+.nav-btn{
+    color: #031e36;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-btn:hover{
+    font-size: 22px;
+    transition: 0.5s;
+    border-bottom: 2px solid #031e36;
+    color: #031e36;
+    text-decoration: none;
+}
 
 
 dl, ol, ul {
