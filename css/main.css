@@ -161,3 +161,16 @@ footer {
     padding: 40px;
     background-image: linear-gradient(to right, #8dc6ff4f,#8dc6ff,#8dc6ff4f);
 }
+.heading{
+    text-align: center;
+   
+    color: #8DC6FF;
+    font-family: 'Philosopher';
+    font-size: 5rem;
+    margin: 50px;
+    margin-bottom: 100px;
+}
+.para{
+    color: #8DC6FF;
+    margin: 10px 30px;
+}
