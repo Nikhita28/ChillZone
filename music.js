@@ -33,7 +33,7 @@
     var song13=new Audio();
     song13.src="music/High.mp3";
     var song14=new Audio();
-    song14.src="music/Daaru.mp3";
+    song14.src="music/Daru.mp3";
     var song15=new Audio();
     song15.src="music/Dope.mp3";
 
