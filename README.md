@@ -45,6 +45,16 @@
 
 Stress has become a part of everyone's life. We are always stressed about something or the other. We do not care about resting and relaxing for a bit. Even when we get free time, we are either found skimming through memes on facebook or scrolling reels on Instagram. We have therefore developed ChillZone- a place for you to relax and spend some time. What's special about ChillZone? We have a collection of interesting games, soothing music and rib tickling jokes to add that bit of fun to your boring life.</p>
 
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- 
+## Future Prospects
+- New games in the Let's Play section
+- Add more fun ways to relax
+It's all upto your creativity. Feel free to create issues and contribute to this repository.
 
 ## Getting Started
 
