@@ -50,11 +50,11 @@ Stress has become a part of everyone's life. We are always stressed about someth
 - CSS
 - JavaScript
 - Bootstrap
-- 
+
 ## Future Prospects
 - New games in the Let's Play section
-- Add more fun ways to relax
-It's all upto your creativity. Feel free to create issues and contribute to this repository.
+- Add more fun ways to relax<br/>
+<p>It's all upto your creativity. Feel free to create issues and contribute to this repository.</p>
 
 ## Getting Started
 
