@@ -4,7 +4,7 @@
    body{
     background-image: radial-gradient(#104069,#000000);
 }
-.navbar-light{
+nav{
     background-color: hsl(210, 100%, 78%) !important;
 }
 .navbar-brand{
@@ -15,20 +15,25 @@
     color: #031e36;
     background-color: #8DC6FF !important;
 }
-.nav-btn{
-    color: #031e36;
-    font-family: 'Roboto', sans-serif !important;
-    padding: 5px 10px;
-    margin-right: 20px;
-    border: none;
-    font-size: 20px;
-    text-decoration: none;
+.nav-tabs{
+    float : right;
+    margin:0 30px;
+    padding: 0;
+    font-size: 1.2rem;
 }
-.nav-btn:hover{
-    font-size: 22px;
-    transition: 0.5s;
-    border-bottom: 2px solid #031e36;
-    color: #031e36;
+.nav-link{
+    color: #000000;
+    padding : 16px 25px;
+}
+.active{
+    color: #8DC6FF !important;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: white;
+}
+.container-fluid{
+    border-bottom: 3px solid white;
 }
    .start{
      font-style: oblique;

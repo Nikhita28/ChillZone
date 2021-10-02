@@ -4,32 +4,6 @@
 body{
     background-image: radial-gradient(#104069,#000000);
 }
-.navbar-light{
-    background-color: hsl(210, 100%, 78%) !important;
-}
-.navbar-brand{
-    font-family: 'Roboto', sans-serif !important;
-    font-size: 30px !important;
-    font-weight: bold;
-    font-style: italic;
-    color: #031e36;
-    background-color: #8DC6FF !important;
-}
-.nav-btn{
-    color: #031e36;
-    font-family: 'Roboto', sans-serif !important;
-    padding: 5px 10px;
-    margin-right: 20px;
-    border: none;
-    font-size: 20px;
-    text-decoration: none;
-}
-.nav-btn:hover{
-    font-size: 22px;
-    transition: 0.5s;
-    border-bottom: 2px solid #031e36;
-    color: #031e36;
-}
 .header{
     height: 650px;
     background-image: url('../images/back.png');
@@ -132,4 +106,36 @@ footer > p >a{
     text-decoration: none;
     font-weight: bold;
     color: #031e36;
+}
+
+nav{
+    background-color: hsl(210, 100%, 78%) !important;
+}
+.navbar-brand{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: bold;
+    font-style: italic;
+    color: #031e36;
+    background-color: #8DC6FF !important;
+}
+.nav-tabs{
+    float : right;
+    margin:0 30px;
+    padding: 0;
+    font-size: 1.2rem;
+}
+.nav-link{
+    color: #000000;
+    padding : 16px 25px;
+}
+.active{
+    color: #8DC6FF !important;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: white;
+}
+.container-fluid{
+    border-bottom: 3px solid white;
 }
