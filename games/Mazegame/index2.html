@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <link rel='stylesheet' href='style2.css'>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='script2.js'></script>
+    <title>Maze Game</title>
+  </head>
+  <body onload='onLoad();'>
+    <header>Maze Game</header>
+    <canvas id='mainForm'></canvas>
+    <div class='settings'>
+      <label for='cols'>Columns:</label>
+      <input id='cols' type='text' size='5' value='20'><br>
+      <label for='rows'>Rows:</label>
+      <input id='rows' type='text' size='5' value='20'><br>
+      <input id='generate' type='button' value='Generate'>
+    </div>
+    <div class='controls'>
+      <div id='up' class='up'>&#8679;</div>
+      <div id='right' class='right'>&#8680;</div>
+      <div id='down' class='down'>&#8681;</div>
+      <div id='left' class='left'>&#8678;</div>
+    </div>
+  </body>
+</html>

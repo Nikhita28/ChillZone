@@ -1,0 +1,33 @@
+* {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #F8C5C5;
+  }
+  
+  table, tbody, tr, td {
+    text-align: left;
+  }
+  
+  
+  #settings {
+    position: absolute;
+    right: 10vw;
+    left: 80vw;
+    top: 75px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+  }
+  
+  input[type = "button"] {
+    background-color: aliceblue;
+      height: 30px;
+  }
+  
+  .note{
+    font-size:0.8rem;
+    color:maroon;
+    font-weight:bold;
+  }
+  
