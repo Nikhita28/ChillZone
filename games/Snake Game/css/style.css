@@ -5,7 +5,7 @@
 }
 
 .body{
-    background: url("../back.jpg");
+    background: url("../back-removebg-preview.png"), #6DB3F2;
     min-height: 100vh;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 }
 
 #board{
-    background: linear-gradient(rgb(245, 248, 43), rgb(234, 248, 151) ) ;
+    background:#8DC6FF  ;
     width: 80vmin;
     height: 82vmin;
     border: 2px solid black;
