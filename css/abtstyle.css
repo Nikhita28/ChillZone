@@ -5,6 +5,10 @@
     background-image: radial-gradient(#104069,#000000);
 }
 
+.m2 {
+    overflow-y: hidden;
+}
+
 .navbar {
     display: flex;
     position: relative;
@@ -142,6 +146,9 @@ justify-content: center;
  padding-right: 50px;
  margin-right: 0%;
 }
+
+
+
 footer{
     text-align: center;
     /* background-color: #8DC6FF; */

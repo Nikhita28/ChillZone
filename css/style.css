@@ -39,7 +39,7 @@ body{
 .main {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     min-width: 100vw;
     margin-top: 2em;
@@ -50,7 +50,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-width: 100vw !important;
+    min-width: 90vw !important;
     flex-wrap: wrap;
 }
 .content {
