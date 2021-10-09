@@ -250,7 +250,7 @@ footer > p >a{
     }
 }
 
-@media (max-width: 800px) /*iPad*/ {
+@media (max-width: 820px) /*iPad*/ {
     .header {
         background-image: none;
         height: 400px;
