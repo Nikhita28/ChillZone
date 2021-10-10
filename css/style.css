@@ -207,10 +207,14 @@ footer > p >a{
 
 @media (max-width: 574px) {
 
+    .heading {
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+    }
+
     .content {
-    
-        width: revert; 
-        
+        width: revert;
     }
 
     .navbar {
