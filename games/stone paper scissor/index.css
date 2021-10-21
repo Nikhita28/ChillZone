@@ -127,6 +127,7 @@
   }
   
   main::before{
+    background-image: url(Images/bg-triangle.svg);
     background-repeat: no-repeat;
     background-size: cover;
     content: '';

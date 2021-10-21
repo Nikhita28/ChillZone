@@ -126,10 +126,10 @@ function checkWinner(){
   || userChoice === 'scissors' && computerChoice === 'paper'){
     //User won
     myScoreUpdate();
-    result.innerText= "win";
+    result.innerText= "you win";
   }else{
     //Computer won
-    result.innerText= "lost";
+    result.innerText= "you lost";
     computerScoreUpdate();
   }
 }
@@ -159,6 +159,6 @@ function updateSelection(selectionEl, choice){
   //update selection image
   const img = selectionEl.querySelector('img');
   selectionEl.classList.add('btn-'+choice);
-  img.src='images/icon-'+choice+'.svg';
+  img.src='Images/icon-'+choice+'.svg';
   img.alt = choice;
 }
