@@ -37,13 +37,6 @@
     
 </details> -->
 
-<!-- Hacktoberfest 2021 -->
-
-<p align="center">
-  <img src="images/hacktoberfest.jpg" />
-</p>
-
-<p>Celebrate Hacktoberfest by completing some simple tasks in this project. This repository is open to all and any member can contribute to this project by following our contribution steps below!✨</p>
 
 <!-- ABOUT THE PROJECT -->
 
