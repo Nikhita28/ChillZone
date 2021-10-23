@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/games/stone paper scissor/index.css">
+  <link rel="stylesheet" href="index.css">
   <title> Rock-Paper-Scissors</title>
 </head>
 <body>
 
   <div class="container">
     <header>
-      <img class="logo_img" src="/games/stone paper scissor/Images/logo.svg" alt="logo">
+      <img class="logo_img" src="Images/logo.svg" alt="logo">
       <div class="score-wrapper">
         <div class="score-container">
           <h4>Your score</h4>
@@ -19,7 +19,7 @@
         </div>
         <div class="score-container">
           <h4>Computer score</h4>
-          <p id="computer_score">0</p>
+          <p id="computer_score">0</p>  
         </div>
       </div>
 
@@ -28,28 +28,28 @@
     <main id="main">
       <button class="btn-circle btn-paper pick" type="button" name="button"  data-choice="paper">
         <span class="wrapper">
-          <img src="/games/stone paper scissor/Images/icon-paper.svg" alt="paper icon">
+          <img src="Images/icon-paper.svg" alt="paper icon">
         </span>
       </button>
 
       <button class="btn-circle btn-scissors pick" type="button" name="button" data-choice="scissors">
         <span class="wrapper">
-          <img src="/games/stone paper scissor/Images/icon-scissors.svg" alt="scissors icon">
+          <img src="Images/icon-scissors.svg" alt="scissors icon">
         </span>
       </button>
 
       <button class="btn-circle btn-rock pick" type="button" name="button" data-choice="rock">
         <span class="wrapper">
-          <img src="/games/stone paper scissor/Images/icon-rock.svg" alt="rock icon">
+          <img src="Images/icon-rock.svg" alt="rock icon">
         </span>
       </button>
     </main>
 
     <button id="open" class="btn-rules" type="button" name="button">Rules</button>
     <div class="rules-modal" id="modal">
-      <img src="/games/stone paper scissor/Images/image-rules.svg" alt="rules">
+      <img src="Images/image-rules.svg" alt="rules">
       <button id="close" type="button" name="button">
-        <img src="/games/stone paper scissor/Images/icon-close.svg" alt="close">
+        <img src="Images/icon-close.svg" alt="close">
       </button>
     </div>
     <div class="rules-container"></div>
@@ -63,13 +63,13 @@
       <h2>You picked</h2>
       <button class="btn-circle btn-paper" id="user_select" type="button" name="button">
         <span class="wrapper">
-          <img src="/games/stone paper scissor/Images/icon-paper.svg" alt="paper icon">
+          <img src="Images/icon-paper.svg" alt="paper icon">
         </span>
       </button>
     </div>
 
     <div class="result-text">
-      <h1>You <span id="win">win</span></h1>
+      <h1><span id="win">win</span></h1>
       <button class="btn-reset" id="reset" type="button" name="button">Play again</button>
     </div>
 
@@ -77,12 +77,12 @@
       <h2>The Computer picked</h2>
       <button class="btn-circle btn-rock" id="computer_select" type="button" name="button">
         <span class="wrapper">
-          <img src="/games/stone paper scissor/Images/icon-rock.svg" alt="rock icon">
+          <img src="Images/icon-rock.svg" alt="rock icon">
         </span>
       </button>
     </div>
   </div>
   
-  <script src="/games/stone paper scissor/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
