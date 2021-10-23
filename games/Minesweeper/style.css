@@ -1,3 +1,9 @@
+*{
+  font-family: 'Philosopher', sans-serif;
+}
+body{
+  background-color: #8DC6FF;
+}
 .container {
     width: 500px;
     align-content: center;
