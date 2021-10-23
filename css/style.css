@@ -154,10 +154,6 @@ footer > p >a{
     margin: .5rem;
 }
 
-.navbar-links {
-    height: 100%;
-}
-
 .navbar-links ul {
     float: right;
     display: flex;
@@ -270,4 +266,4 @@ footer > p >a{
         min-width: 400px;
         margin-right: 0;
     }
-}
+}}
