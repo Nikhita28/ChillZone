@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    padding: 0;
+    margin: 0px;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+.hide{
+    display: none;
+}
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+    left:500px;
+    top: 150px;
+    background: rgb(248, 248, 248);
+}
+#character{
+    width: 80px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    top: 100px;
+    background: url("https://www.kindpng.com/picc/m/108-1085324_chrome-dinosaur-png-t-rex-google-png-transparent.png");
+    
+    /* background-position: center; */
+    background-size: cover;
+    left:0px;
+}
+#block{
+    width: 80px;
+    height: 80px;
+    background: url("https://image.flaticon.com/icons/png/512/31/31794.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 20px;
+    left: 430px;
+    
+}
+@keyframes block{
+    0%{left:430px;}
+    100%{left:0px;}
+}
+@keyframes jump{
+    0%{top: 80px;}
+    30%{top: 0px;}
+    70%{top: 0px;}
+    100%{top:80px;}
+}
+.animate_block{
+    animation: block 1s infinite linear;
+}
+.animate_character{
+    animation: jump 500ms;
+}
+.gameOver_screen{
+    background: url("https://ih1.redbubble.net/image.2667959176.2534/st,small,507x507-pad,600x600,f8f8f8.jpg");
+    background-size: cover;
+    background-position: center;
+    border:1px solid black;
+    width:400px;
+    height:400px;
+    position: absolute;
+    left: 550px;
+    bottom: 200px;
+}
+.restart{
+    /* border: 1px solid black; */
+    width:200px;
+    height:30px;
+    line-height:30px;
+    position:absolute;
+    left: 100px;
+    top: 330px;
+    text-align: center;
+}
+.restart a{
+    text-decoration: none;
+    color: black;
+}
+#scoreDisplay{
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+.startGame_scr{
+    position: absolute;
+    left: 520px;
+    top: 470px;
+    cursor: pointer;
+}
+.header{
+    background: rgb(56, 56, 56);
+}
+.header{
+    border: 1px solid black;
+    width: 100%;
+    height: 90px;
+}
+.header h1{
+    position: absolute;
+    top: 40px;
+    color:white;
+    
+}
