@@ -1,0 +1,94 @@
+*{
+    font-family: 'Philosopher', sans-serif;
+}
+body{
+    background-color: #031e36 !important;
+}
+.navbar-light{
+    background-color: hsl(210, 100%, 78%) !important;
+}
+.navbar-brand{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: bold;
+    font-style: italic;
+    color: #031e36;
+    background-color: #8DC6FF !important;
+}
+.nav-btn{
+    color: #031e36;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav-btn:hover{
+    font-size: 22px;
+    transition: 0.5s;
+    border-bottom: 2px solid #031e36;
+    color: #031e36;
+}
+.title {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 4rem;
+    text-align: center;
+    color: #8DC6FF;
+}
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #8DC6FF;
+    border-radius: 10px;
+    padding: 3rem;
+    margin-bottom: 100px;
+ }
+.container p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: justify;
+    color: black;
+}
+button {
+    margin-top: 40px;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    background-color: #8DC6FF;
+    color: #031e36;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid #031e36;
+}
+button:hover{
+    color: white;
+    background-color: #031e36;
+    transition: 0.5s;
+}
+footer{
+    text-align: center;
+    /* background-color: #8DC6FF; */
+    color: #031e36;
+    padding: 40px;
+    background-image: linear-gradient(to right, #8dc6ff4f,#8dc6ff,#8dc6ff4f);
+}
+footer > p >a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #031e36;
+}
+
+.cat {
+    width: min(100%, 500px);
+    height: 500px;
+}
+
+.cat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
