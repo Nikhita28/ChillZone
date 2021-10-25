@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://apksshare.com/wp-content/uploads/2021/04/Dino-T-Rex-1.55-APK-MOD-Download-UNLIMITED-MONEY.png" type="image/png">
+</head>
+<body>
+    <div class="header">
+        <h1>The Classic Dinosaur Game</h1>
+    </div>
+    <div id="game">
+        <div id="character"></div>
+        <div id="block"></div>
+    </div>
+    <div class="startGame_scr" onclick="startGame()">
+        
+            click here to start the game
+            <br>
+            Press 'Enter' to jump
+    </div>
+    <div id=scoreDisplay>
+        Score:0
+    </div>
+    <div class="gameOver_screen hide">
+        <div class="restart">
+            <p id=score_ind>Score:0</p>
+            <a href="">
+                Play Again
+            </a>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
