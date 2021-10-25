@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0a1524;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Instructions page */
+
+.intro {
+  background-color: #090b10;
+  color: white;
+  font-family: "Bebas Neue";
+  height: 70vh;
+  width: 60vw;
+  border-radius: 14px;
+}
+
+.instructions {
+  font-size: 24px;
+  padding: 15px 50px;
+  margin: 30px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.title {
+  padding-top: 40px;
+  font-size: 60px;
+}
+
+.start-button {
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 30%;
+  background-color: white;
+  color: #090b10;
+  font-family: "Bebas Neue";
+  text-decoration: none;
+}
+
+/* Pong game page */
+
+.board {
+  height: 85vh;
+  width: 80vw;
+  background-image: url(images/tabletop.jpg);
+  background-position: center;
+  background-size: contain;
+  border-radius: 14px;
+}
+
+.ball {
+  height: 30px;
+	width: 30px;
+	border-radius: 50%;
+  background-color: #eee;
+	position: fixed;
+	top: calc(50% - 15px);
+	left: calc(50% - 15px);
+}
+
+.ball_effect {
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  box-shadow:
+    0 0 10px #fff, -2px 0 10px
+    #5b626b, 2px 0 10px #fff;
+}
+
+.paddle {
+  height: 100px;
+	width: 18px;
+	border-radius: 50%;
+  background-color: #eee;
+	position: fixed;
+}
+
+.paddle_1 {
+  top: calc(7.5vh + 55px);
+	left: calc(10vw + 30px);
+  box-shadow:
+		0 0 18px #fff, -4px 0 18px
+		#5b626b, 4px 0 18px #fff;
+}
+
+.paddle_2 {
+  top: calc(85vh + 7.5vh - 100px - 55px);
+	right: calc(10vw + 30px);
+	box-shadow:
+		0 0 18px #fff, -4px 0 18px
+		#5b626b, 4px 0 18px #fff;
+}
+
+.player_1_score {
+  height: 50px;
+	width: 50px;
+	color: #7cb7ff;
+	position: fixed;
+	left: 30vw;
+	margin-top: 30px;
+}
+
+.player_2_score {
+  height: 50px;
+  width: 50px;
+  color: #7cb7ff;
+  position: fixed;
+  left: 70vw;
+  margin-top: 30px;
+}
+
+.message {
+  position: fixed;
+	height: 10vh;
+	width: 30vw;
+	color: white;
+	left: 38vw;
+	margin: 30px auto auto auto;
+  font-family: "Bebas Neue";
+  font-size: 28px;
+}
