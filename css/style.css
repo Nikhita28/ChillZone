@@ -154,10 +154,6 @@ footer > p >a{
     margin: .5rem;
 }
 
-.navbar-links {
-    height: 100%;
-}
-
 .navbar-links ul {
     float: right;
     display: flex;
@@ -203,7 +199,7 @@ footer > p >a{
     width: 100%;
     background-color: #031e36;
     border-radius: 10px;
-}   
+}
 
 @media (max-width: 574px) {
 

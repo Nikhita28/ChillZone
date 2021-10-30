@@ -23,10 +23,6 @@
     margin: .5rem;
 }
 
-.navbar-links {
-    height: 100%;
-}
-
 .navbar-links ul {
     float: right;
     display: flex;
@@ -84,7 +80,7 @@
      align-items: center;
      flex-direction: column;
      padding: 0em 3em;
-     
+
    }
    .start p{
     padding-left: 20px;
@@ -258,11 +254,3 @@ footer > p >a{
         height: auto;
     }
 }
-
-
-
-
-
-
-
-
