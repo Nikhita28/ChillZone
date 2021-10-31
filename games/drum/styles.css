@@ -2,8 +2,14 @@
   font-family: 'Philosopher', sans-serif;
 }
 body {
+    background-image: url(https://cdn.wallpapersafari.com/36/2/wJELKQ.jpeg);
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   text-align: center;
-  background-color: #8DC6FF;
+  background-color: transparent;
 }
 
 h1 {
