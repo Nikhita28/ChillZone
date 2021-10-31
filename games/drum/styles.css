@@ -78,7 +78,7 @@ footer {
 
 .drum {
   outline: none;
-  border: 10px solid #404B69;
+  border: 5px solid #B026FF;
   font-size: 5rem;
   font-family: 'Arvo', cursive;
   line-height: 2;
@@ -92,4 +92,9 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+  cursor: pointer;
+}
+.drum:hover{
+    border: 6px solid #FFFF00;
+    cursor: pointer;
 }
