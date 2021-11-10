@@ -1,0 +1,41 @@
+html {
+    background-image: radial-gradient(#104069,#000000);
+    font-family: 'Philosopher', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container > h1 {
+    color: white;
+}
+
+#buttons > button {
+    cursor: pointer;
+    font-family: 'Philosopher', sans-serif;
+    border: none;
+    outline: none;
+    background-color: #454545;
+    padding: 8px;
+    color: white;
+    margin: 0 8px;
+    transform: scale(1);
+    transition: .2s;
+}
+
+
+#buttons > button:hover {
+    background-color: #252525;
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+#buttons > button:active {
+    outline: none;
+    transform: scale(1.1);
+    transition: .2s;
+}
